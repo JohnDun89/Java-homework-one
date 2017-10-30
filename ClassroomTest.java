@@ -32,4 +32,10 @@ public class ClassroomTest {
     assertEquals(0, classroom.roomCount());
   }
 
+  @Test
+  public void canAddStudent(){
+    classroom.add(student);
+    assertEquals(1, classroom.roomCount());
+  }
+
 }
