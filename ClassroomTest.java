@@ -23,7 +23,13 @@ public class ClassroomTest {
 
   @Test
   public void hasNumber() {
-    int number = this.classroom.getNumber();
+    int number = classroom.getNumber();
     assertEquals(2, number);
   }
+
+  @Test
+  public void roomStartsEmpty(){
+    assertEquals(0, classroom.roomCount());
+  }
+
 }
