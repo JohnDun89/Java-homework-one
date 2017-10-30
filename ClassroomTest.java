@@ -38,4 +38,12 @@ public class ClassroomTest {
     assertEquals(1, classroom.roomCount());
   }
 
+  @Test
+  public void cannotAddStudentWhenRoomIsFull(){
+    for(int i = 0; i < 15 ; i++){
+      classroom.add(student);
+    }
+    assertEquals(15, classroom.roomCount());
+  }
+
 }

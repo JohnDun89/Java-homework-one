@@ -29,7 +29,14 @@ class Classroom{
   }
 
   public void add(Student student){
+    if(isRoomFull()){
+      return;
+    }
     int roomCount = roomCount();
     room[roomCount] = student;
+  }
+
+  public boolean isRoomFull(){
+    return roomCount() == room.length;
   }
 }
